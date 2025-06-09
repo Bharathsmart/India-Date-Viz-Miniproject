@@ -129,11 +129,11 @@ if plot:
         heatmap_fig = px.imshow(corr_df, text_auto=True, aspect="auto", title='Correlation of Census Metrics')
         st.plotly_chart(heatmap_fig, use_container_width=True)
 
-        # ---------------- Optional Line Chart ----------------
-        # Uncomment and adapt if time-series or yearly data is present
-        # st.markdown("### 📅 Line Chart of Primary Parameter Over Time")
-        # line_fig = px.line(state_df.sort_values('Year'), x='Year', y=primary, color='District')
-        # st.plotly_chart(line_fig, use_container_width=True)
+        ---------------- Optional Line Chart ----------------
+        Uncomment and adapt if time-series or yearly data is present
+        st.markdown("### 📅 Line Chart of Primary Parameter Over Time")
+        line_fig = px.line(state_df.sort_values('Year'), x='Year', y=primary, color='District')
+        st.plotly_chart(line_fig, use_container_width=True)
 
 
 # Optional Footer
